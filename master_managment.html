@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Admin Dashboard</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <section>
+        <nav class="nav-wrapper">
+            <div class="container">
+                <ul class="left">
+                  <li><img src="img/gscs_logo.jfif" alt="GSCS Logo" class="circle responsive-img  profile_pic"
+                    width="60px" height="60px"></li>
+                  <li><a href="" class="company_name">GSCS International Ltd.</a></li>
+              </ul>
+                <ul class="right">
+                    <li  class="profile_name">Mr. Kamal Hossain</li>
+                    <li><img src="img/profile.png" alt="GSCS Logo" class="circle responsive-img profile_pic"
+                        width="50px" height="50px"></li>
+                </ul>
+            </div>
+        </nav>   
+  </section>
+  <section class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col s12"></div>
+            <!-- Dashboard Dropdown -->
+            <div class="col m3">
+              <ul class="collapsible z-depth-0">
+                  <li>
+                    <div class="collapsible-header dashboard_button">GSCS Dashboard <i class="material-icons iconadd dashboard_icon">add</i>
+                      <i class="material-icons iconremove dashboard_icon">remove</i></div>
+                    <div class="collapsible-body">
+                      <ul class="collapsible">
+                          <a href=""><li class="collapsible_body_align">
+                            <div class="collapsible-header collapsible-header_hover">
+                              Personel Management
+                              <i class="material-icons">keyboard_arrow_right</i></div>
+                          </li></a>
+                          <li class="collapsible_body_aligns">
+                            <div class="collapsible-header collapsible-header_hover">Client Enquiry
+                              <i class="material-icons">keyboard_arrow_right</i>
+                            </div>
+                          </li>
+                          <li class="collapsible_body_aligns">
+                            <div class="collapsible-header collapsible-header_hover">Application
+                              <i class="material-icons rotate right-align">expand_more</i></div>
+                            <div class="collapsible-body collapsible-body_submenu">
+                              <ul class="collapsible">
+                                  <li>
+                                    <div class="collapsible-header collapsible-header_hover">
+                                      Application List
+                                      <i class="material-icons">keyboard_arrow_right</i></div>
+                                  </li>
+                                  <li>
+                                    <div class="collapsible-header collapsible-header_hover collapsible-body_submenu_top">Renewal
+                                      <i class="material-icons">keyboard_arrow_right</i>
+                                    </div>
+                                  </li>
+                                </ul>
+                            </div>
+                          </li>
+                          <li class="collapsible_body_aligns">
+                              <div class="collapsible-header collapsible-header_hover">Financial NC Log
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </div>
+                            </li>
+                            <li class="collapsible_body_aligns">
+                              <div class="collapsible-header collapsible-header_hover">Certificate
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </div>
+                            </li>
+                            <li class="collapsible_body_aligns">
+                              <div class="collapsible-header collapsible-header_hover">Certificate Management
+                                <i class="material-icons rotate right-align">expand_more</i></div>
+                              <div class="collapsible-body collapsible-body_submenu">
+                                <ul class="collapsible">
+                                    <li>
+                                      <div class="collapsible-header collapsible-header_hover">
+                                        Certificate Management List
+                                        <i class="material-icons">keyboard_arrow_right</i></div>
+                                    </li>
+                                    <li>
+                                      <div class="collapsible-header collapsible-header_hover collapsible-body_submenu_top">Certificate Management
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                      </div>
+                                    </li>
+                                  </ul>
+                              </div>
+                            </li>
+                            <li class="collapsible_body_aligns">
+                              <div class="collapsible-header collapsible-header_hover">Client Diretory
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </div>
+                            </li>
+                            <li class="collapsible_body_aligns">
+                              <div class="collapsible-header collapsible-header_hover">Change Request
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </div>
+                            </li>
+                            <li class="collapsible_body_aligns">
+                              <div class="collapsible-header collapsible-header_hover">TC Management
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </div>
+                            </li>
+                            <li class="collapsible_body_aligns">
+                              <div class="collapsible-header collapsible-header_hover">Library
+                                <i class="material-icons">keyboard_arrow_right</i>
+                              </div>
+                            </li>
+                        </ul>
+                      </div>
+                  </li>
+             </ul>
+          </div>
+            <!-- End Dashboard Dropdown -->
+            <!-- Dashbaord Main Section -->
+            <div class="col m9 main_container">
+              <!--Application Form Header Section -->
+                <div class="app_title">
+                        <div class="row">
+                            <div class="col m10 app_from">
+                                <p>Application Form</p>
+                             </div>
+                             <div class="col m2 app_btn ">
+                                <button class="btn app_btns  waves-effect waves-light capitalize" type="submit" name="action">Back
+                                  </button>
+                            </div>
+                        </div>
+                </div>
+                <!-- Scope Holder -->
+                <div class="title_name">
+                    <p>Scope Holder</p>
+                </div>
+                <div class="row">
+                  <form action="">
+                    <div class="input-field col s12 m4">
+                      <input placeholder=" SIMEC" id="first_name" type="text" class="validate">
+                      <label for="first_name">Company Name<span class="validation">*</span></label>
+                    </div>
+                    <div class="input-field col s12 m4">
+                      <input placeholder=" Zone: Abcd, District: Xyz;" id="first_name" type="text" class="validate">
+                      <label for="first_name">Address<span class="validation">*</span></label>
+                    </div>
+                    <div class="input-field col s12 m4">
+                      <input placeholder=" 78956" id="first_name" type="text" class="validate">
+                      <label for="first_name">Postal Code<span class="validation">*</span></label>
+                    </div>  
+                    <div class="input-field col s12 m4">
+                      <label for="first_name">Country<span class="validation">*</span></label>
+                      <select class="browser-default">
+                        <option value="1">Bangladesh</option>
+                        <option value="2">Canada</option>
+                        <option value="3">USA</option>
+                      </select>
+                    </div> 
+                    <div class="input-field col s12 m4">
+                      <label for="first_name">State<span class="validation">*</span></label>
+                      <select class="browser-default">
+                        <option value="1">Dhaka</option>
+                        <option value="2">Cumilla</option>
+                        <option value="3">Barisal</option>
+                      </select>
+                    </div>   
+                     <div class="input-field col s12 m4">
+                      <input placeholder=" Dhaka" id="first_name" type="text" class="validate">
+                      <label for="first_name">City<span class="validation">*</span></label>
+                    </div>  
+                    <div class="input-field col s12 m4">
+                      <input placeholder=" 78956" id="first_name" type="file" class="validate">
+                      <label for="first_name">Tax/GST File<span class="validation">*</span></label>
+                      <p class="file_text">Supported File Formats: Jpeg,Jpg,png.pdf.docx,doc.xlsx,xls,ppt,pptx</p>
+                    </div>  
+                    <div class="input-field col s12 m5">
+                      <input placeholder=" " id="first_name" type="text" class="validate">
+                      <label for="first_name">Tax No./NTA No./ GST No./ VAT No.<span class="validation">*</span></label>
+                    </div>  
+                  </form>                    
+                </div>
+                <!-- End Scope Holder -->
+                <!-- Main Contact Person -->
+                <div class="title_name">
+                  <p>Main Contact Person</p>
+                </div>
+              <div class="row">
+                <form action="">
+                  <div class="input-field col s12 m4">
+                    <label for="first_name">Salutation<span class="validation">*</span></label>
+                    <select class="browser-default">
+                      <option value="1">Mrs.</option>
+                      <option value="2">Ms.</option>
+                      <option value="3">Mr.</option>
+                    </select>
+                  </div> 
+                  <div class="input-field col s12 m4">
+                    <input placeholder=" Sin" id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name<span class="validation">*</span></label>
+                  </div>
+                  <div class="input-field col s12 m4">
+                    <input placeholder=" Tinure" id="first_name" type="text" class="validate">
+                    <label for="first_name">Last Name<span class="validation">*</span></label>
+                  </div>
+                  <div class="input-field col s12 m4">
+                    <label for="first_name">Job Title<span class="validation">*</span></label>
+                    <select class="browser-default">
+                      <option value="1">ASSISTANT MANAGER</option>
+                      <option value="2">MANAGER</option>
+                    </select>
+                  </div>
+                  <div class="input-field col s12 m4">
+                    <input placeholder=" +45443378956" id="first_name" type="text" class="validate">
+                    <label for="first_name">Phone<span class="validation">*</span></label>
+                  </div>   
+                   <div class="input-field col s12 m4">
+                    <input placeholder=" sin@tin.organization" id="first_name" type="text" class="validate">
+                    <label for="first_name">Email<span class="validation">*</span></label>
+                  </div>   
+                </form> 
+              </div>
+              <!-- Company certified -->
+              <div class="title_name">
+                <p>For which program(s) would you like to have your company certified<span class="validation">*</span></p>
+             </div> 
+             <div class="row">
+              <form action="">
+                <div class="col s12 m4">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span>Global Organic Textile Standard</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span>Global Organic Textile Standard</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span>Global Organic Textile Standard</span>
+                    </label>
+                  </p>
+                </div>  
+                <div class="col s12 m4">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span>Global Organic Textile Standard</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span>Global Organic Textile Standard</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span>Global Organic Textile Standard</span>
+                    </label>
+                  </p>
+                </div>  
+                <div class="col s12 m4">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span>Global Organic Textile Standard</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span>Global Organic Textile Standard</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span>Global Organic Textile Standard</span>
+                    </label>
+                  </p>
+                </div>  
+              </form> 
+            </div>
+              </div>
+              <!-- Certification Body Section -->
+              <div class="row">
+                <div class="col m3"></div>
+                <div class="col m9 section_top main_container">
+                    <div class="app_title">
+                            <div class="row">
+                                <div class="col m12 app_from">
+                                    <p>If you are already certified by other Certificate Body for following Standard<span class="validation">*</span></p>
+                                 </div>
+                            </div>
+                    </div>
+                    <!-- Certificated File -->
+                    <div class="title_name">
+                        <p>Organic Content Standard </p>
+                    </div>
+                    <div class="row">
+                      <form action=""> 
+                        <div class="input-field col s12 m4">
+                          <label for="first_name">Confirmation Body</label>
+                          <select class="browser-default">
+                            <option value="1">-Certificate Body-</option>
+                            <option value="2">Certificate Body 1</option>
+                            <option value="3">Certificate Body 2</option>
+                          </select>
+                        </div> 
+                         <div class="input-field col s12 m4">
+                          <input placeholder=" Dhaka" id="first_name" type="date" class="validate">
+                          <label for="first_name">Validity Date<span class="validation">*</span></label>
+                        </div>  
+                        <div class="input-field col s12 m4">
+                          <input placeholder=" 78956" id="first_name" type="file" class="validate">
+                          <label for="first_name">Certificate File</label>
+                          <p class="file_text">Supported File Formats: Jpeg,Jpg,png.pdf.docx,doc.xlsx,xls,ppt,pptx</p>
+                        </div>  
+                      </form>                    
+                    </div>
+                    <div class="title_name">
+                      <p>Recycled Claim Standard </p>
+                  </div>
+                  <div class="row">
+                    <form action=""> 
+                      <div class="input-field col s12 m4">
+                        <label for="first_name">Confirmation Body</label>
+                        <select class="browser-default">
+                          <option value="1">-Certificate Body-</option>
+                          <option value="2">Certificate Body 1</option>
+                          <option value="3">Certificate Body 2</option>
+                        </select>
+                      </div> 
+                       <div class="input-field col s12 m4">
+                        <input placeholder=" Dhaka" id="first_name" type="date" class="validate">
+                        <label for="first_name">Validity Date<span class="validation">*</span></label>
+                      </div>  
+                      <div class="input-field col s12 m4">
+                        <input placeholder="" id="first_name" type="file" class="validate">
+                        <label for="first_name">Certificate File</label>
+                        <p class="file_text">Supported File Formats: Jpeg,Jpg,png.pdf.docx,doc.xlsx,xls,ppt,pptx</p>
+                      </div>  
+                    </form>                    
+                  </div>
+                    <!-- End Certificated File -->
+                  </div>
+              </div>
+              <!-- Products Types Section -->
+              <div class="row">
+                <div class="col m3"></div>
+                <div class="col m9 section_top main_container">
+                    <div class="app_title">
+                            <div class="row">
+                                <div class="col m12 s12 app_from">
+                                    <p>What types(s) of products would you like to have certified?</p>
+                                 </div>
+                            </div>
+                    </div>
+                    <!-- Product Types Table -->
+                    <div class="row product_type">
+                        <table class="highlight">
+                          <thead class="product_thead">
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Product Category</th>
+                                <th>Product Description</th>
+                                <th>Watage(%)</th>
+                                <th>Material Composition</th>
+                                <th>Standard</th>
+                                <th>Label Grade</th>
+                                <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>01</td>
+                              <td>Category 1</td>
+                              <td>Description</td>
+                              <td>1.5%</td>
+                              <td>Good</td>
+                              <td>Well</td>
+                              <td>A</td>
+                              <td><i class="material-icons">open_in_new</i> <i class="material-icons">delete</i></td>
+
+                            </tr>
+                            <tr>
+                              <td>02</td>
+                              <td>Category 2</td>
+                              <td>Description 2</td>
+                              <td>1.5%</td>
+                              <td>Good 2</td>
+                              <td>Well 2</td>
+                              <td>B</td>
+                              <td><i class="material-icons">open_in_new</i> <i class="material-icons">delete</i></td>
+                            </tr>
+                           
+                          </tbody>
+                        </table>                
+                    </div>
+                  </div>
+              </div>
+               <!-- Products Details Section -->
+               <div class="row">
+                <div class="col m3"></div>
+                <div class="col m9 section_top main_container">
+                    <div class="app_title">
+                            <div class="row">
+                                <div class="col m12 app_from">
+                                    <p>Product Deatils</p>
+                                 </div>
+                            </div>
+                    </div>
+
+                    <!-- Product Details Table -->
+                    <div class="row product_type">
+                      <!-- Product Category -->
+                      <div class="row">
+                      <form action=""> 
+                        <div class="input-field col s12 m4">
+                          <label for="first_name">Product Category<span class="validation">*</span></label>
+                          <select class="browser-default">
+                            <option value="1">Men's Clothing</option>
+                            <option value="2">Women's Clothing</option>
+                            <option value="3">Kid's Clothing</option>
+                          </select>
+                        </div> 
+                        <div class="input-field col s12 m4">
+                          <label for="first_name">Product Description<span class="validation">*</span></label>
+                          <select class="browser-default">
+                            <option value="1">T-shirt</option>
+                            <option value="2">Shirt</option>
+                            <option value="3">Jeans</option>
+                          </select>
+                        </div>  
+                        <div class="input-field col s12 m4">
+                          <input placeholder=" sin@tin.organization" id="first_name" type="text" class="validate">
+                          <label for="first_name">Wastage(%)<span class="validation">*</span></label>
+                        </div>  
+                      </form>                    
+                    </div>
+                    <!-- Material -->
+                    <div class="row Product_material">
+                      <form action=""> 
+                        <div class="input-field col s12 m4">
+                          <label for="first_name">Material<span class="validation">*</span></label>
+                          <select class="browser-default">
+                            <option value="1">-Material-</option>
+                            <option value="2">Material 2</option>
+                            <option value="3">Material 3</option>
+                          </select>
+                        </div> 
+                        <div class="input-field col s12 m4">
+                          <label for="first_name">Material Type<span class="validation">*</span></label>
+                          <select class="browser-default">
+                            <option value="1">-Material Type-</option>
+                            <option value="2">Material Type 1</option>
+                            <option value="3">Material Type 2</option>
+                          </select>
+                        </div>  
+                        <div class="input-field col s12 m2">
+                          <input placeholder=" Percentage(%)" id="first_name" type="text" class="validate">
+                          <label for="first_name">Percentage(%)<span class="validation">*</span></label>
+                        </div>  
+                        <div class="input-field col s12 m2 add_more">
+                          <p><a href=""><i class="material-icons left">add</i><span>Add Material</span></a></p>
+                        </div>
+                      </form>
+                      <div class="row product_details">
+                        <table class="highlight">
+                          <thead class="product_thead">
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Material</th>
+                                <th>Material Type</th>
+                                <th>Percentage(%)</th>
+                                <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>01</td>
+                              <td>Regular Cotton</td>
+                              <td>certified</td>
+                              <td>100</td>
+                              <td><i class="material-icons">open_in_new</i> <i class="material-icons">delete</i></td>
+                            </tr>
+                          </tbody>
+                        </table>                
+                    </div>                  
+                    </div> 
+                    <!-- Product Standard -->
+                    <div class="row">
+                      <form action=""> 
+                        <div class="input-field col s12 m4">
+                          <label for="first_name">Product Standard<span class="validation">*</span></label>
+                          <select class="browser-default">
+                            <option value="1">-Product Standard-</option>
+                            <option value="2">Product Standard 2</option>
+                            <option value="3">Product Standard 3</option>
+                          </select>
+                        </div> 
+                        <div class="input-field col s12 m4">
+                          <label for="first_name">Label Grade<span class="validation">*</span></label>
+                          <select class="browser-default">
+                            <option value="1">-Label Grade-</option>
+                            <option value="2">Label Grade 1</option>
+                            <option value="3">Label Grade 2</option>
+                          </select>
+                        </div>  
+                        <div class="input-field col s12 m4 add_more">
+                          <p><a href=""><i class="material-icons left">add</i><span>Add Material Standard</span></a></p>
+                        </div>  
+                      </form>
+                      <div class="row product_details">
+                        <table class="highlight">
+                          <thead class="product_thead">
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Product Standard Name</th>
+                                <th>Label Grade</th>
+                                <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>01</td>
+                              <td>Regular Cotton</td>
+                              <td>100</td>
+                              <td><i class="material-icons">open_in_new</i> <i class="material-icons">delete</i></td>
+                            </tr>
+                          </tbody>
+                        </table> 
+                     </div>
+                     <!-- Cancle/ Save Button -->
+                     <div class="row">
+                      <div class="col m2 s2 add_more">
+                        <a href=""><i class="material-icons left">add</i>Add Product</a>
+                      </div>
+                      <div class="col m7 s5 right-align">
+                        <button class="btn product_btn_cancle" type="submit" name="action">Cancle
+                        </button>
+                      </div>
+                      <div class="col m2 s5">
+                        <button class="btn product_btn_save" type="submit" name="action">Save Product
+                        </button>
+                      </div>
+                    </div>       
+                    </div>        
+                    </div>
+                  </div>
+              </div>
+               <!-- Location Certified Section -->
+               <div class="row">
+                <div class="col m3"></div>
+                <div class="col m9 section_top main_container">
+                    <div class="app_title">
+                            <div class="row">
+                                <div class="col m12 s12 app_from">
+                                    <p>What location(s) related processes should be certified?</p>
+                                 </div>
+                            </div>
+                    </div>
+                    <!-- Product Types Table -->
+                    <div class="row product_type">
+                      <p><span style="font-weight: bold;">Note:</span> Please add all processing units which should be part of the scope. Certified suppliers do not need to be indicated here.</p>
+                        <table class="highlight">
+                          <thead class="product_thead">
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Name</th>
+                                <th>Number of Employees</th>
+                                <th>Country</th>
+                                <th>City</th>
+                                <th>Type</th>
+                                <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>01</td>
+                              <td>Category 1</td>
+                              <td>Description</td>
+                              <td>1.5%</td>
+                              <td>Good</td>
+                              <td>Well</td>
+                              <td><i class="material-icons">open_in_new</i> <i class="material-icons">delete</i></td>
+                            </tr>
+                          </tbody>
+                        </table>            
+                    </div>
+                    <div class="add_more">
+                      <a href=""><i class="material-icons left">add</i>Add Unit(s) for Certified</a>
+                    </div> <br>
+                  </div>
+              </div>
+                        <!-- Recycled Claim Standard Section -->
+                        <div class="row">
+                          <div class="col m3"></div>
+                          <div class="col m9 section_top main_container">
+                              <div class="app_title">
+                                      <div class="row">
+                                          <div class="col m12 app_from">
+                                              <p>Recycled Claim Standard</p>
+                                           </div>
+                                      </div>
+                              </div>
+          
+                              <!-- Product Details Table -->
+                              <div class="row product_type">
+                                <!-- Product Category -->
+                                <div class="row">
+                                <form action=""> 
+                                  <div class="input-field col s12 m4">
+                                    <input placeholder=" ABCD" id="first_name" type="text" class="validate">
+                                    <label for="first_name">Scope Holder Name<span class="validation">*</span></label>
+                                  </div> 
+                                  <div class="input-field col s12 m4">
+                                    <input placeholder=" Zone:Abcd, District:Xyz" id="first_name" type="text" class="validate">
+                                    <label for="first_name">Address<span class="validation">*</span></label>
+                                  </div> 
+                                  <div class="input-field col s12 m4">
+                                    <input placeholder=" 9000" id="first_name" type="text" class="validate">
+                                    <label for="first_name">Pastal Code<span class="validation">*</span></label>
+                                  </div> 
+                                  <div class="input-field col s12 m4">
+                                    <label for="first_name">Country<span class="validation">*</span></label>
+                                    <select class="browser-default">
+                                      <option value="1">Bangladesh</option>
+                                      <option value="2">Canada</option>
+                                      <option value="3">USA</option>
+                                    </select>
+                                  </div> 
+                                  <div class="input-field col s12 m4">
+                                    <label for="first_name">State<span class="validation">*</span></label>
+                                    <select class="browser-default">
+                                      <option value="1">Dhaka</option>
+                                      <option value="2">Ottawa</option>
+                                      <option value="3">Los Angles</option>
+                                    </select>
+                                  </div>  
+                                  <div class="input-field col s12 m4">
+                                    <input placeholder=" Dhaka" id="first_name" type="text" class="validate">
+                                    <label for="first_name">City<span class="validation">*</span></label>
+                                  </div>  
+                                  <div class="input-field col s12 m4">
+                                    <input placeholder=" Dhaka" id="first_name" type="text" class="validate">
+                                    <label for="first_name">No. Of Employees<span class="validation">*</span></label>
+                                  </div> 
+                                  <div class="input-field col s12 m4">
+                                    <label for="first_name">Business Sector<span class="validation">*</span></label>
+                                    <select class="browser-default">
+                                      <option value="1">Information Technology</option>
+                                      <option value="2">Information Technology</option>
+                                      <option value="3">Information Technology</option>
+                                    </select>
+                                  </div>
+                                </form>                    
+                              </div>
+                              <!-- Product List 1 -->
+                              <div class="row Product_material">
+                                  <div class="row">
+                                      <div class="col m9 app_from">
+                                          <p>Product List</p>
+                                       </div>
+                                      <div class="input-field col s12 m3 add_more">
+                                        <p><a href=""><i class="material-icons left">add</i><span>Select Product</span></a></p>
+                                      </div> 
+                                  </div>
+                                  <div class="row product_type">
+                                    <table class="highlight">
+                                      <thead class="product_thead">
+                                        <tr>
+                                            <th>S.No.</th>
+                                            <th>Product Category</th>
+                                            <th>Product Description</th>
+                                            <th>Watage(%)</th>
+                                            <th>Material Composition</th>
+                                            <th>Standard</th>
+                                            <th>Label Grade</th>
+                                            <th>Action</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>01</td>
+                                          <td>Category 1</td>
+                                          <td>Description</td>
+                                          <td>1.5%</td>
+                                          <td>Good</td>
+                                          <td>Well</td>
+                                          <td>A</td>
+                                          <td><i class="material-icons">open_in_new</i> <i class="material-icons">delete</i></td>
+            
+                                        </tr>
+                                        <tr>
+                                          <td>02</td>
+                                          <td>Category 2</td>
+                                          <td>Description 2</td>
+                                          <td>1.5%</td>
+                                          <td>Good 2</td>
+                                          <td>Well 2</td>
+                                          <td>B</td>
+                                          <td><i class="material-icons">open_in_new</i> <i class="material-icons">delete</i></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>                
+                                </div>                
+                              </div> 
+                              <!-- Product List 2 -->
+                              <div class="row Product_material">
+                                <div class="row">
+                                    <div class="col m9 app_from">
+                                        <p>Product List</p>
+                                     </div>
+                                </div>
+                                <div class="row product_type">
+                                  <div class="col s6 m5">
+                                    <table class="highlight">
+                                      <thead class="product_thead">
+                                        <tr>
+                                            <th>S.No.</th>
+                                            <th>Product Name</th>
+                                            <th>Action</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>01</td>
+                                          <td>Name 1</td>
+                                          <td><i class="material-icons">open_in_new</i> <i class="material-icons">delete</i></td>
+                                        </tr>
+                                        <tr>
+                                          <td>01</td>
+                                          <td>Name 2</td>
+                                          <td><i class="material-icons">open_in_new</i> <i class="material-icons">delete</i></td>
+                                        </tr>
+                                      </tbody>
+                                    </table> 
+                                  </div>
+                                  <div class="input-field col s4 m4">
+                                    <label for="first_name">Process(es)<span class="validation">*</span></label>
+                                    <select class="browser-default">
+                                      <option value="1">-Process-</option>
+                                      <option value="2">Process 1</option>
+                                      <option value="3">Process 2</option>
+                                    </select>
+                                  </div>
+                                   <div class="col s4 m3">
+                                    <div class="add_more" style="margin-top: 30px;">
+                                      <a href=""><i class="material-icons left">add</i>Add Process</a>
+                                    </div>
+                                  </div>                
+                              </div>             
+                            </div>
+                            <div class="row">
+                              <div class="col s8 m4">
+                                <p>Would you like to apply for reductions ? -</p>
+                              </div>
+                              <div class="col s4 m4">
+                                <div class="row">
+                                  <div class="col m3">
+                                    <p> 
+                                      <label >
+                                        <input type="checkbox" />
+                                        <span>Yes</span>
+                                      </label>
+                                    </p>
+                                  </div>
+                                  <div class="col m4">
+                                    <p>
+                                      <label>
+                                        <input type="checkbox" />
+                                        <span>No</span>
+                                      </label>
+                                    </p>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div> 
+                            <div class="row Product_material">
+                              
+                              <div class="row product_type">
+                                  <div class="input-field col s4 m4">
+                                    <label for="first_name">Country<span class="validation">*</span></label>
+                                    <select class="browser-default">
+                                      <option value="1">Bangladesh</option>
+                                      <option value="2">Canada</option>
+                                      <option value="3">Japan</option>
+                                    </select>
+                                  </div>
+                                <div class="input-field col s4 m4">
+                                  <label for="first_name">State<span class="validation">*</span></label>
+                                  <select class="browser-default">
+                                    <option value="1">Dhaka</option>
+                                    <option value="2">London</option>
+                                    <option value="3">Japan</option>
+                                  </select>
+                                </div>
+                                <div class="input-field col s12 m4">
+                                  <input placeholder=" Dhaka" id="first_name" type="text" class="validate">
+                                  <label for="first_name">City<span class="validation">*</span></label>
+                                </div> 
+                                <div class="input-field col s6 m5">
+                                  <input placeholder="" id="first_name" type="file" class="validate">
+                                  <label for="first_name">Certificate File</label>
+                                  <p class="file_text">Supported File Formats: Jpeg,Jpg,png.pdf.docx,doc.xlsx,xls,ppt,pptx</p>
+                                </div> 
+                                <div class="input-field col s6 m5">
+                                  <input placeholder="" id="first_name" type="file" class="validate">
+                                  <label for="first_name">Certificate File</label>
+                                  <p class="file_text">Supported File Formats: Jpeg,Jpg,png.pdf.docx,doc.xlsx,xls,ppt,pptx</p>
+                                </div>  
+                                 <div class="col s4 m2">
+                                  <div class="add_more">
+                                    <a href=""><i class="material-icons left">add</i>AddStandard</a>
+                                  </div>
+                                </div>                
+                            </div>             
+                          </div>
+                               <!-- Cancle/ Save Button -->
+                               <div class="row">
+                                <div class="col m10 s5 right-align">
+                                  <button class="btn product_btn_cancle" type="submit" name="action">Cancle
+                                  </button>
+                                </div>
+                                <div class="col m2 s5 ">
+                                  <button class="btn product_btn_save" type="submit" name="action">Save Unit
+                                  </button>
+                                </div>
+                              </div>       
+                              </div>         
+                              </div>
+                            </div>
+                        </div>   
+                <!-- Checklist Section -->
+              <div class="row">
+                <div class="col m3"></div>
+                 <div class="col m9 section_top main_container">
+                    <div class="app_title">
+                            <div class="row">
+                                <div class="col m12 s12 app_from">
+                                    <p>Checklist</p>
+                                 </div>
+                            </div>
+                    </div>
+                    <div class="row product_type">
+                      <!-- Question 1 -->
+                        <p class="checklist_question"><span class="checklist_number">1.</span> Are you already a GSCS certified client (is it your re-certification with GSCS ?)?</p><br>
+                          <div class="input-field col s4 m4">
+                            <label for="first_name">Answer<span class="validation">*</span></label>
+                            <select class="browser-default">
+                              <option value="1">Answer</option>
+                              <option value="2">Answer</option>
+                              <option value="3">Answer</option>
+                            </select>
+                          </div>  
+                          <div class="input-field col s8 m8 Comment_box">
+                            <input placeholder="   Comment" id="first_name" type="text" class="validate" style="height: 90px;">
+                            <label for="first_name">Comment<span class="validation">*</span></label>
+                          </div> 
+                          <div class="input-field col s6 m12">
+                            <input placeholder="" id="first_name" type="file" class="validate">
+                            <label for="first_name">File</label>
+                            <p class="file_text">Supported File Formats: Jpeg,Jpg,png.pdf.docx,doc.xlsx,xls,ppt,pptx</p>
+                          </div>          
+                    </div>
+                    <!-- Question 2 -->
+                    <p class="checklist_question"><span class="checklist_number">2.</span> Whether the certified body has denied the certified</p><br>
+                    <div class="input-field col s4 m4">
+                      <label for="first_name">Answer<span class="validation">*</span></label>
+                      <select class="browser-default">
+                        <option value="1">Answer</option>
+                        <option value="2">Answer</option>
+                        <option value="3">Answer</option>
+                      </select>
+                    </div>  
+                    <div class="input-field col s8 m8 Comment_box">
+                      <input placeholder="   Comment" id="first_name" type="text" class="validate" style="height: 90px;">
+                      <label for="first_name">Comment<span class="validation">*</span></label>
+                    </div> 
+                    <div class="input-field col s6 m12">
+                      <input placeholder="" id="first_name" type="file" class="validate">
+                      <label for="first_name">File</label>
+                      <p class="file_text">Supported File Formats: Jpeg,Jpg,png.pdf.docx,doc.xlsx,xls,ppt,pptx</p>
+                    </div> 
+                    <!-- Question 3 -->
+                    <p class="checklist_question"><span class="checklist_number">3.</span> Would you like to transfer your certified to the GSCS ?</p><br>
+                    <div class="input-field col s4 m4">
+                      <label for="first_name">Answer<span class="validation">*</span></label>
+                      <select class="browser-default">
+                        <option value="1">Answer</option>
+                        <option value="2">Answer</option>
+                        <option value="3">Answer</option>
+                      </select>
+                    </div>  
+                    <div class="input-field col s8 m8 Comment_box">
+                      <input placeholder="   Comment" id="first_name" type="text" class="validate" style="height: 90px;">
+                      <label for="first_name">Comment<span class="validation">*</span></label>
+                    </div> 
+                    <div class="input-field col s6 m12">
+                      <input placeholder="" id="first_name" type="file" class="validate">
+                      <label for="first_name">File</label>
+                      <p class="file_text">Supported File Formats: Jpeg,Jpg,png.pdf.docx,doc.xlsx,xls,ppt,pptx</p>
+                    </div>
+                     <!-- Question 4 -->
+                     <p class="checklist_question"><span class="checklist_number">4.</span> Please state if you are already certified by the certified body for following Standard- 1. GOTS, 2. OCS, 3.GRS, 4.RCS, 5.BSCI, 6.SA8000, 7.CCS, 8.Oeko-Tex Step, 9.WRAP, 10.GSCPSR, 11.EWP, 12.SEDEX, 13.RDS, 14.RWS, 15.RMS</p><br>
+                     <div class="input-field col s4 m4">
+                       <label for="first_name">Answer<span class="validation">*</span></label>
+                       <select class="browser-default">
+                         <option value="1">Answer</option>
+                         <option value="2">Answer</option>
+                         <option value="3">Answer</option>
+                       </select>
+                     </div>  
+                     <div class="input-field col s8 m8 Comment_box">
+                       <input placeholder="   Comment" id="first_name" type="text" class="validate" style="height: 90px;">
+                       <label for="first_name">Comment<span class="validation">*</span></label>
+                     </div> 
+                     <div class="input-field col s6 m12">
+                       <input placeholder="" id="first_name" type="file" class="validate">
+                       <label for="first_name">File</label>
+                       <p class="file_text">Supported File Formats: Jpeg,Jpg,png.pdf.docx,doc.xlsx,xls,ppt,pptx</p>
+                     </div>
+                     <!-- Question 5 -->
+                     <p class="checklist_question"><span class="checklist_number">5.</span> Has your certified suspanded or withd</p><br>
+                     <div class="input-field col s4 m4">
+                       <label for="first_name">Answer<span class="validation">*</span></label>
+                       <select class="browser-default">
+                         <option value="1">Answer</option>
+                         <option value="2">Answer</option>
+                         <option value="3">Answer</option>
+                       </select>
+                     </div>  
+                     <div class="input-field col s8 m8 Comment_box">
+                       <input placeholder="   Comment" id="first_name" type="text" class="validate" style="height: 90px;">
+                       <label for="first_name">Comment<span class="validation">*</span></label>
+                     </div> 
+                     <div class="input-field col s6 m12">
+                       <input placeholder="" id="first_name" type="file" class="validate">
+                       <label for="first_name">File</label>
+                       <p class="file_text">Supported File Formats: Jpeg,Jpg,png.pdf.docx,doc.xlsx,xls,ppt,pptx</p>
+                     </div>
+                  </div>
+              </div>  
+          </div>  
+    </div>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s6 m3 offset-m3">
+                    <p>Copyright @GSCS International Ltd.</p>
+                </div>
+                <div class="col s6 m3">
+                    <p>Design & Developed by <a href="" style="color: white;">Simec System Ltd.</a> </p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+</section>
+<script>
+  $(document).ready(function(){
+     $('.collapsible').collapsible();
+   }); 
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

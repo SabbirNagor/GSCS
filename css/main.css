@@ -1,0 +1,290 @@
+/* Navbar */
+nav {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 100%;
+  height: 60px;
+}
+nav ul a:hover {
+  background-color: transparent;
+}
+.company_name {
+  color: #6fbb1d;
+  font-weight: 500;
+  font-size: 20px;
+}
+.profile_name {
+  color: black;
+  margin-right: 18px;
+}
+.profile_pic {
+  margin-top: 5px;
+}
+
+/* Dashboard collapse add/remove icon */
+.iconadd {
+  display: inline-block;
+  color: white;
+}
+.iconremove {
+  display: none !important;
+  color: white;
+}
+
+li.active .collapsible-header .material-icons.iconadd {
+  display: none;
+}
+
+li.active .collapsible-header .material-icons.iconremove {
+  display: inline-block !important;
+}
+
+/* collapse body  */
+.collapsible {
+  border: none;
+}
+.collapsible {
+  box-shadow: none;
+}
+.collapsible a {
+  color: black;
+}
+.collapsible-body {
+  border-bottom: none;
+  padding: 0px;
+}
+.collapsible-body_submenu {
+  padding: 8px;
+  margin-bottom: -20px;
+  margin-top: -8px;
+}
+.collapsible-body_submenu_top {
+  margin-top: 8px;
+}
+.collapsible_body_align {
+  margin-top: -7px;
+  margin-bottom: 7px;
+}
+.collapsible-header_hover:hover {
+  background-color: #e9fad6;
+}
+.collapsible_body_aligns {
+  margin-bottom: 7px;
+}
+.material-icons {
+  margin-left: auto;
+}
+/* Main Dashboard */
+.dashboard_button {
+  background-color: #69c208;
+  font-size: 17px;
+  color: white;
+  border-top-left-radius: 6px;
+}
+.dashboard_icon {
+  margin-left: 6rem;
+}
+.btn:hover {
+  background-color: #6fbb1d;
+}
+.btn:focus {
+  background-color: #6fbb1d;
+}
+.main {
+  background-color: #f8f8f8;
+  margin-top: 18px;
+}
+.main_container {
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 8px;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.card .card-action {
+  background-color: #e9fad6;
+}
+.card
+  .card-action
+  a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: black;
+  text-transform: unset;
+}
+.card
+  .card-action
+  a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+  color: green;
+}
+.text_1 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.checkbox_line_height {
+  line-height: 35px;
+}
+.card-action {
+  height: 90px;
+}
+.card-content {
+  min-height: 220px;
+}
+.cardbox_size {
+  padding: 20px;
+  margin-top: 8px;
+  margin-bottom: -8px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  background-color: #69c208;
+}
+.footer p {
+  color: white;
+}
+@media only screen and (max-width: 601px) {
+  .dashboard_button {
+    width: auto;
+  }
+  .footer {
+    margin-top: 20px;
+  }
+  .footer p {
+    font-size: 7px;
+  }
+}
+
+/* Master_Management_Section */
+.app_title {
+  margin-top: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.app_from p {
+  font-size: 22px;
+  color: black;
+  font-weight: 500;
+  margin-left: 15px;
+}
+.app_btn {
+  margin-top: 15px;
+}
+.app_btns {
+  background-color: white;
+  color: gray;
+  font-weight: 500;
+  margin-left: 50px;
+}
+.title_name {
+  font-size: 24px;
+  color: #69c208;
+  font-weight: 500;
+}
+/* input field */
+input[type="text"]:not(.browser-default) {
+  border-color: white;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.15), 0 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid white;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.15), 0 5px 6px rgba(0, 0, 0, 0.2);
+}
+input[type="text"]:not(.browser-default).validate + label {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  margin-top: -15px;
+}
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
+  color: #69c208;
+}
+.input-field {
+  margin-top: 20px;
+}
+.validation {
+  color: red;
+}
+/* Select field */
+select {
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.15), 0 5px 6px rgba(0, 0, 0, 0.2);
+  height: 3.1rem;
+}
+select:focus {
+  outline: none;
+}
+.input-field.col label {
+  left: 0.75rem;
+  margin-top: -39px;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.file_text {
+  font-size: 10px;
+  color: gray;
+}
+[type="checkbox"]:checked + span:not(.lever):before {
+  border-right: 2px solid #69c208;
+  border-bottom: 2px solid #69c208;
+}
+/* Certification Body Section */
+.section_top {
+  margin-top: 25px;
+}
+/* Input Date */
+input[type="date"]:not(.browser-default) {
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.15), 0 5px 6px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+.input-field > input[type="date"]:not(.browser-default) + label {
+  margin-top: -12px;
+  color: black;
+  font-weight: 640;
+  font-size: 1.2rem;
+}
+
+/* Product Types */
+.product_type {
+  padding: 15px;
+}
+.product_details {
+  padding: 23px;
+}
+.product_thead {
+  background-color: #e9fad6;
+}
+.highlight {
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.15), 0 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Product_material {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.15), 0 5px 6px rgba(0, 0, 0, 0.2);
+}
+.add_more a {
+  color: #69c208;
+  font-weight: 600;
+}
+.product_btn_cancle {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  border-radius: 3px;
+}
+.product_btn_save {
+  background-color: #69c208;
+  color: white;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+/* Checklist */
+.checklist_question {
+  font-size: 18px;
+}
+.checklist_number {
+  font-weight: 500;
+}
